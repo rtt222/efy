@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/4x3/ir.svg" type="image/svg+xml" sizes="any">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وب من</title>
+    <link rel="stylesheet" href="style2.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta name="description" content="ما نام نداریم. ما صورت نداریم. ما فقط یک ایده‌ایم... و ایده‌ها ضد گلوله‌اند.">
+    </head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>FSociietty</h1>
+        <p>خوش آمدید به وب‌سایت حرفه‌ای و مدرن من</p>
+        <!-- جستجو اضافه شده -->
+<div class="search-container">
+    <form action="#" method="get" class="search-form">
+        <input type="search" id="site-search" name="q" placeholder="جستجو " required>
+        <button type="submit">
+            <i class="fas fa-search"></i>
+        </button>
+    </form>
+</div>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">خانه</a></li>
+                <li><a href="#">درباره ما</a></li>
+                <li><a href="index2.html">تماس با ما</a></li>
+                <li><a href="index1.html">محصولات</a></li>
+                <li  class="nav-item">
+  <a  href="#move" class="navbar" id="openAboutVideo">مشاهده ویدیو</a>
+</li>
+</ul>
+
+<!-- این مودال رو یه بار قبل از </body> بذار -->
+<div id="videoModal" class="video-modal">
+  <div class="video-modal-content">
+    <span class="video-close">×</span>
+    <div class="video-wrapper">
+      <video controls autoplay><source src="hack.mp4.mp4" type="video/mp4"></video> 
+    </div>
+  </div>
+</div>
+<script>
+document.getElementById('openAboutVideo').onclick = e => {
+  e.preventDefault();
+  document.getElementById('videoModal').style.display = 'flex';
+};
+document.querySelector('.video-close').onclick = () => {
+  document.getElementById('videoModal').style.display = 'none';
+};
+document.onkeydown = e => { if(e.key === "Escape") document.getElementById('videoModal').style.display = 'none'; };
+</script>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        
+        <!-- Sidebar -->
+        <aside>
+            <h3>منوی کناری</h3>
+            <ul>
+                <li><a href="#">لینک اول</a></li>
+                <li><a href="#">لینک دوم</a></li>
+                <li><a href="#">لینک سوم</a></li>
+                <li><a href="#">لینک چهارم</a></li>
+                <li><a href="#">لینک پنجم</a></li>
+            </ul>
+
+            <h3 style="margin-top: 2rem;">دسته‌بندی‌ها</h3>
+            <ul>
+                <li><a href="#">طراحی وب</a></li>
+                <li><a href="#">برنامه‌نویسی</a></li>
+                <li><a href="#">سئو</a></li>
+                <li><a href="#">گرافیک</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <h2>خوش آمدید به بخش اصلی سایت</h2>
+            <p>اینجا محتوای اصلی سایت شما قرار می‌گیره. می‌تونید مقاله، محصول، گالری یا هر چیزی که خواستید بذارید.</p>
+
+            <div class="card">
+                <h3>درباره ی من</h3>
+              <p>من هکر نیستم که فقط قفل بشکنم،  
+من معمار سایه‌ام؛  
+اونجایی که همه فکر می‌کنن دیوار محکمه،  
+من درِ مخفی رو پیدا می‌کنم،  
+نه برای اینکه دزدی کنم،  
+بلکه برای اینکه به صاحب‌خونه بگم:  
+«درِ پشتیت بازه، یکی قبل من می‌تونست همه‌چیت رو ببره.»  
+
+من شب‌ها بیدار نمی‌مونم که نابود کنم،  
+بیدار می‌مونم که نذارم نابود بشی.  
+سیستم رو نمی‌شکنم،  
+ضعفش رو پیدا می‌کنم،  
+بعد خودم محکم‌تر از قبل می‌سازمش.  
+
+چون هکر واقعی،  
+هم دزده، هم نگهبان؛  
+هم گرگِ، هم چوپان.  
+و فقط یه تفاوت بزرگ داره:  
+من وقتی می‌رم داخل،  
+در رو پشت سرم قفل می‌کنم...  
+قفلِ بهتری می‌سازم.</p>
+              </div>
+
+            <div class="card">
+                <h3>نمایشی</h3>
+<p style="color: ffcc00;">
+▄▄▄▄▄▄▄▄▄▄▄<br>
+      ▄▀▀           ▀▄<br>
+     ▐  ▄▀▀▀▀▀▀▀▀▀▄   ▌<br>
+     ▌ ▐           ▌  ▐<br>
+     ▌  ▀▄▄▄▄▄▄▄▄▄▀   ▐<br>
+     ▐                ▌<br>
+      ▀▄            ▄▀<br>
+        ▀▀▀▀▀▀▀▀▀▀▀<br>
+     ▄▀▄▀▄ Ethical ▀▄▀▄▀▄<br>
+    ███ Hacker Mode ███<br>
+</p>
+
+              </div>
+
+            <div class="card">
+                <h3></h3>
+               <p class="text-center text-success mt-4" style="font-family: 'Courier New'; letter-spacing: 1px;">
+  ما نام نداریم.<br>
+  ما صورت نداریم.<br>
+  ما فقط یک ایده‌ایم...<br>
+  <span class="text-danger fw-bold">و ایده‌ها ضد گلوله‌اند.</span>
+</p>
+            </div>
+        </main>
+    </div>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <p class="footer-text">
+      هر ایده‌ای داری، ما اینجاییم تا با هم بسازیمش<br>
+      سوالی؟ پیشنهادی؟ منتظرتیم ♥
+    </p>
+
+    <div class="footer-contact">
+      <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
+      <span class="separator">|</span>
+      <a href="tel:+989939855154">09939855154</a>
+    </div>
+<br>
+    <!-- دکمه تلگرام -->
+    <div class="telegram-button">
+      <a href="https://t.me/FSociietty" target="_blank">
+        <i class="fab fa-telegram-plane"></i> پیام بده تو تلگرام 🚀
+      </a>
+    </div>
+
+    <!-- شبکه‌های اجتماعی با آیکون -->
+    <div class="social-links">
+      <a href="https://instagram.com/erfan__.sadeghi" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      
+      <a href="https://youtube.com/@Erfan-y7x9y
+" target="_blank" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+
+    <p class="copyright">
+      © ۱۴۰۴ شرکت شما - همه حقوق محفوظ است
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
